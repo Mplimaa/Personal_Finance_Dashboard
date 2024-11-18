@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Biblioteca para ler arquivos Excel -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Personal Finance Dashboard</h1>
+        <p>Controle suas finanças pessoais de forma fácil e interativa!</p>
+    </header>
+
+    <!-- Formulário para adicionar nova transação -->
+    <section id="new-transaction">
+        <h2>Adicionar Transação</h2>
+        <form id="transactionForm">
+            <input type="date" id="date" required>
+            <input type="text" id="description" placeholder="Descrição" required>
+            <select id="type" required>
+                <option value="">Tipo</option>
+                <option value="Receita">Receita</option>
+                <option value="Despesa">Despesa</option>
+            </select>
+            <input type="text" id="category" placeholder="Categoria" required>
+            <input type="number" id="amount" placeholder="Valor" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <input type="file" id="excelInput" accept=".xlsx, .xls">
+    </section>
+
+    <!-- Resumo Financeiro -->
+    <section id="summary">
+        <div class="card">
+            <h3>Saldo Total</h3>
+            <p id="total-balance">R$ 0,00</p>
+        </div>
+        <div class="card">
+            <h3>Receita</h3>
+            <p id="total-income">R$ 0,00</p>
+        </div>
+        <div class="card">
+            <h3>Despesas</h3>
+            <p id="total-expense">R$ 0,00</p>
+        </div>
+    </section>
+
+    <!-- Gráfico de Receitas vs Despesas -->
+    <section id="charts">
+        <canvas id="incomeExpenseChart"></canvas>
+    </section>
+
+    <!-- Tabela de Transações -->
+    <section id="transactions">
+        <h2>Transações Recentes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th>Categoria</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTable">
+                <!-- Transações irão aparecer aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
