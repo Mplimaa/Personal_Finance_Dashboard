@@ -1,4 +1,4 @@
-# Personal_Finance_Dashboard
+# Personal_Finance_Dashboard - Em construção 🏗️⚒️🔨
 
 O Personal Finance Dashboard é uma aplicação web que permite o gerenciamento das finanças pessoais de forma interativa e intuitiva. A aplicação foi desenvolvida com HTML, CSS e JavaScript, e está em fase de desenvolvimento para incluir funcionalidades avançadas, como importação/exportação de dados em formato Excel e armazenamento em um repositório JSON.
 
