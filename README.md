@@ -27,7 +27,7 @@ Clone ou baixe este repositório:
 
 bash
 Copiar código
-git clone https://github.com/seu-usuario/personal-finance-dashboard.git
+git clone https://github.com/Mplimaa/personal-finance-dashboard.git
 cd personal-finance-dashboard
 Abra o arquivo index.html diretamente no seu navegador (basta dar um duplo clique ou abrir manualmente).
 
